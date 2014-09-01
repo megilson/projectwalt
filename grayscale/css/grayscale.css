@@ -142,7 +142,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/nextstep.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -275,10 +275,21 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    column-count: 2;
 }
 .column {
+    width: 100%;
     padding-left: 1em;
     padding-bottom: 1em;
+}
+
+.card {
+    background:#FFF;
+    border:1px solid #AAA;
+    border-bottom:3px solid #BBB;
+    padding:0px;
+    margin:15px;
+    overflow:hidden;
 }
 
 .school {
@@ -331,6 +342,7 @@ a:focus {
     }
     .content-column-two {
         display: table;
+        column-count: 2;
     }
     .table-control {
         width:50%;
