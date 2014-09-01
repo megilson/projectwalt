@@ -67,6 +67,8 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
+        opacity: 0.90;
+        filter: alpha(opacity=90); /* IE8 */
 }
 
 .navbar-custom .navbar-brand {
@@ -123,11 +125,13 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
+/*        opacity: 0.90;
+        filter: alpha(opacity=90); /* IE8 */
         background-color: #000;
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 2px solid rgba(255,255,255,.3);
     }
 }
 
@@ -247,10 +251,57 @@ a:focus {
         transform: scale(1);
     }
 }
-
-.content-section {
+.content-section-header {
     padding-top: 100px;
 }
+
+.content-section-one {
+    padding-top: 100px;
+}
+
+.content-section-two {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background-color: #202020;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.content-column-two {
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.column {
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.school {
+    
+}
+.school-degree {
+    display: inline-block;
+    margin-bottom:0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+.school-school {
+    margin-bottom:0;
+    font-style: italic;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
 
 .download-section {
     width: 100%;
@@ -278,7 +329,17 @@ a:focus {
     .download-section {
         padding: 100px 0;
     }
-
+    .content-column-two {
+        display: table;
+    }
+    .table-control {
+        width:50%;
+        display: table-cell;
+        padding: 1em;
+        border-left-width: 2px;    
+        border-left-style: solid;    
+        border-left-color: #2f2f2f;    
+    }
     #map {
         height: 400px;
         margin-top: 250px;
