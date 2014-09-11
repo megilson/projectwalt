@@ -10,7 +10,7 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
 //    background-color: #000;
-    background-color: #031634;
+    background-color: #554433;
     
 }
 
@@ -47,7 +47,7 @@ p {
 }
 
 a {
-    color: #219ab3;
+    color: #ccaaaa;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -141,7 +141,7 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #E8DDCB;
+    color: #ddddcc;
     background: url(../img/work2get.jpg) no-repeat top center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -163,80 +163,7 @@ a:focus {
     font-size: 18px;
 }
 
-@media(min-width:992px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-    .intro .intro-body {
-        display: table-cell;
-        vertical-align: top;
-        padding-top: 75px;
-    }
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
 
-    .intro .intro-body .intro-text {
-        font-size: 25px;
-    }
-}
-
-@media(max-width: 991px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-    .intro .intro-body {
-        display: table-cell;
-        vertical-align: top;
-        padding-top: 75px;
-    }
-    .intro .intro-body .brand-heading {
-        font-size: 75px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 23px;
-    }
-}
-
-@media(max-width: 767px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-    .intro .intro-body {
-        display: table-cell;
-        vertical-align: top;
-        padding-top: 75px;
-    }
-    .intro .intro-body .brand-heading {
-        font-size: 50px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 20px;
-    }
-}
-
-@media(max-width: 490px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-    .intro .intro-body {
-        display: table-cell;
-        vertical-align: top;
-        padding-top: 75px;
-    }
-    .intro .intro-body .brand-heading {
-        font-size: 30px;
-    }
-    .intro .intro-body .intro-text {
-        font-size: 18px;
-    }
-}
 .btn-circle {
     width: 70px;
     height: 70px;
@@ -310,8 +237,21 @@ a:focus {
         transform: scale(1);
     }
 }
+.content-section {
+    padding-bottom: 50px;
+}
+.content-section-color-1 {
+    background: #554433;
+}
+.content-section-color-2 {
+    background: #997744;
+}
 .content-section-header {
-    padding-top: 100px;
+    padding-top: 75px;
+    text-align: center;
+}
+.content-section-header-icon {
+    padding-right: 10px;
 }
 
 .content-section-one {
@@ -337,41 +277,60 @@ a:focus {
     column-count: 2;
 }
 .column {
-    width: 100%;
-    padding-left: 1em;
-    padding-bottom: 1em;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    vertical-align: top;
 }
 
 .card {
-    background:#FFF;
+    background: #FFF;
+    color: #554433;
     border:1px solid #AAA;
     border-bottom:3px solid #BBB;
     padding:0px;
     margin:15px;
     overflow:hidden;
+    float:left;
+    width:300px;
+    height:270px;
 }
 
-.school {
+.card h1 {
+    margin:0px;
+    padding:10px;
+    padding-bottom:0px;
+}
+
+.card p {
+    margin:0px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+    
+.education {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     
 }
-.school-degree {
+.education .degree {
     display: inline-block;
-    margin-bottom:0;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     font-size: 1.25em;
     letter-spacing: 1px;
+    padding-bottom: 10px;
 }
-.school-school {
-    margin-bottom:0;
+.education .school {
     font-style: italic;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 100;
     font-size: 1em;
     letter-spacing: 1px;
 }
-
+.padme {
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
 
 .download-section {
     width: 100%;
@@ -392,29 +351,7 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
 
-    .download-section {
-        padding: 100px 0;
-    }
-    .content-column-two {
-        display: table;
-        column-count: 2;
-    }
-    .table-control {
-        width:50%;
-        display: table-cell;
-        padding: 1em;
-        border-left-width: 2px;    
-        border-left-style: solid;    
-        border-left-color: #2f2f2f;    
-    }
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
 }
 
 .btn {
@@ -442,24 +379,6 @@ a:focus {
 
 ul.banner-social-buttons {
     margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
 }
 
 footer {
@@ -492,4 +411,119 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+@media (min-width:992px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+    .intro .intro-body {
+        display: table-cell;
+        vertical-align: top;
+        padding-top: 75px;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+    .intro .intro-body {
+        display: table-cell;
+        vertical-align: top;
+        padding-top: 75px;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 75px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 767px) {
+    .card {
+        width:90%;
+        height: 150px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+    .content-column-two {
+        display: table;
+        height: 100%;
+        column-count: 2;
+    }
+    .table-control {
+        width:50%;
+        display: table-cell;
+        padding: 1em;
+        border-left-width: 2px;    
+        border-left-style: solid;    
+        border-left-color: #2f2f2f;    
+    }
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }    .intro {
+        height: 100%;
+        padding: 0;
+    }
+    .intro .intro-body {
+        display: table-cell;
+        vertical-align: top;
+        padding-top: 75px;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 50px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 20px;
+    }
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 490px) {
+    .card {
+        width:90%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+    .intro .intro-body {
+        display: table-cell;
+        vertical-align: top;
+        padding-top: 75px;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 30px;
+    }
+    .intro .intro-body .intro-text {
+        font-size: 18px;
+    }
 }
