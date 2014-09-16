@@ -69,8 +69,8 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
-        opacity: 0.85;
-        filter: alpha(opacity=85); /* IE8 */
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* IE8 */
 }
 
 .navbar-custom .navbar-brand {
@@ -83,7 +83,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -116,7 +116,7 @@ a:focus {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 10px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
@@ -238,8 +238,12 @@ a:focus {
     }
 }
 .content-section {
-    padding-bottom: 50px;
+    padding-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
 .content-section-color-1 {
     background: #554433;
 }
@@ -247,10 +251,15 @@ a:focus {
     background: #997744;
 }
 .content-section-header {
-    padding-top: 75px;
-    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #997744;
+    text-align: left;
+    width: 100%;
+    display: table;
 }
 .content-section-header-icon {
+    padding-left: 25px;
     padding-right: 10px;
 }
 
@@ -258,43 +267,17 @@ a:focus {
     padding-top: 100px;
 }
 
-.content-section-two {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background-color: #202020;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.content-column-two {
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    column-count: 2;
-}
-.column {
-    height: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    vertical-align: top;
-}
-
 .card {
     background: #FFF;
     color: #554433;
     border:1px solid #AAA;
-    border-bottom:3px solid #BBB;
-    padding:0px;
-    margin:15px;
-    overflow:hidden;
-    float:left;
-    width:300px;
-    height:270px;
+    border-bottom: 3px solid #BBB;
+    padding: 0px;
+    margin: 15px;
+    overflow: hidden;
+    float: left;
+    width: 300px;
+    height: 270px;
 }
 
 .card h1 {
@@ -327,9 +310,25 @@ a:focus {
     font-size: 1em;
     letter-spacing: 1px;
 }
-.padme {
-    padding-bottom: 10px;
+
+.contact {
+    
+}
+
+.contact h4 {
+    padding: 5px;
+    margin: 0px;
+}
+
+.paragraph {
+    padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+.padme {
+    padding-right: 20px;
+    padding-left: 25px;    
 }
 
 .download-section {
@@ -382,11 +381,14 @@ ul.banner-social-buttons {
 }
 
 footer {
+    width: 100%;
+    display: table;
     padding: 50px 0;
 }
 
 footer p {
     margin: 0;
+    font-size: small;
 }
 
 ::-moz-selection {
