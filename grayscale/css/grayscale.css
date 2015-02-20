@@ -72,8 +72,10 @@ a:focus {
 //    color:  #000;
     color:  #FA6900;
     background-color: #E0E4CC;
-    opacity: 0.85;
-    filter: alpha(opacity=85); /* IE8 */
+    opacity: 0.90;
+    filter: alpha(opacity=90); /* IE8 */
+    min-height: 25px;
+    line-height: 5px;
 }
 
 .navbar-custom .navbar-brand {
@@ -89,6 +91,7 @@ a:focus {
     padding: 4px 6px;
     font-size: 14px;
     color: #FA6900;
+    
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -122,7 +125,7 @@ a:focus {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 10px 0;
+        padding: 5px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
@@ -247,7 +250,7 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     color: #000;
-    font-style: italic;
+//    font-style: italic;
 }
 .content-section-header {
     padding-top: 5px;
@@ -291,16 +294,17 @@ a:focus {
     font-size: small;
 }
 .card {
-//    background: #FFF;
+    background: #E0E4CC;
     color: #554433;
     border:1px solid #AAA;
     border-bottom: 3px solid #BBB;
+    border-radius: 5px;
     padding: 0px;
     margin: 15px;
     overflow: hidden;
     float: left;
     width: 300px;
-    height: 270px;
+    padding-bottom: 25px;
 }
 
 .card h1 {
@@ -312,7 +316,7 @@ a:focus {
 .card p {
     margin:0px;
     padding-left:10px;
-    padding-right: 10px;
+    padding-right: 10px;    
 }
     
 .education {
@@ -333,13 +337,75 @@ a:focus {
     font-size: 1em;
     letter-spacing: 1px;
 }
+.position {
+    color: #554433;
+    border:1px solid #AAA;
+    border-bottom: 3px solid #BBB;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 10px;
+//    overflow: hidden;
+//    float: left;
+    width: 95%;
+//    height: 270px;
+}
 
+.position .title {
+    margin:0px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 5px;    
+    font-weight: bold;
+    background: #E0E4CC;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+.position .company, .location, .tenure{
+    margin:0px;
+    width: 100%;
+    padding-left: 10px;
+    background: #E0E4CC;
+    font-size: 1em;
+//    letter-spacing: 1px;
+}
+.position .summary {
+    margin:0px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 10px;    
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.position .sub-header {
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #F38630; 
+    font-style: italic;
+    font-size: 1em;
+    letter-spacing: 1px;
+    
+}
+.position .detail {
+    margin:0px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 10px;    
+    font-size: 1em;
+    letter-spacing: 1px;
+}    
 .contact {
     
 }
 
 .contact h4 {
-    padding: 5px;
+    font-size: 1em;
+    letter-spacing: 1px;
     margin: 0px;
 }
 
@@ -441,15 +507,18 @@ body {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
+
     .intro {
         height: 100%;
         padding: 0;
     }
+
     .intro .intro-body {
         display: table-cell;
         vertical-align: top;
         padding-top: 75px;
     }
+
     .intro .intro-body .brand-heading {
         font-size: 100px;
     }
@@ -457,8 +526,8 @@ body {
     .intro .intro-body .intro-text {
         font-size: 25px;
     }
-}
 
+}
 @media (min-width: 768px) and (max-width: 991px) {
     .intro {
         height: 100%;
@@ -476,6 +545,7 @@ body {
     .intro .intro-body .intro-text {
         font-size: 23px;
     }
+
 }
 
 @media (min-width: 491px) and (max-width: 767px) {
