@@ -410,10 +410,13 @@ a:focus {
 }
 
 .paragraph {
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 0px;
     margin: 0px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
 }
 .padme {
     padding-right: 20px;
